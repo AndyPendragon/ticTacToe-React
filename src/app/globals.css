@@ -83,10 +83,17 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    128deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(0 212 255 / 44%) 100%
+  );
+  color: whitesmoke;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  height: 100vh;
 }
 
 a {
@@ -102,8 +109,26 @@ a {
   width: 2em;
   font-size: 3em;
   font-weight: bolder;
-  border: lightblue solid 1px;
-  background: aliceblue;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7px);
+}
+
+.title {
+  font-size: large;
+  font-weight: bold;
+}
+
+.game {
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  border: 2px solid rgba(255, 255, 255, 0.31);
 }
 
 .tic-tac-toe {
@@ -112,6 +137,13 @@ a {
   align-items: center;
   justify-content: center;
   align-content: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  border: 2px solid rgba(255, 255, 255, 0.31);
+  width: min-content;
+  margin: 5vh auto;
+  padding: 0em 2em 2em;
 }
 
 .board-row {

@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Tic Tac Toe by AndyPendragon",
+  title: "🕹 Tic Tac Toe by AndyPendragon",
   description:
     "My first react (next.js) app - AndyPendragon (Andy Nekena RATOETRARIVO)",
 };
